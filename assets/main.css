@@ -1,0 +1,347 @@
+body {
+  background: rgb(163, 176, 176);
+  background: linear-gradient(90deg, rgba(163, 176, 176, 1) 0%, rgba(218, 218, 218, 1) 40%, rgba(211, 228, 230, 1) 100%);
+}
+
+
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 20px;
+}
+#user-info{
+  color: rgb(61, 161, 61);
+  font-size: large;
+
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+
+/* search bar */
+
+/* Style for the search form container */
+.search-form {
+  position: relative;
+  top: 2%;
+  right: 50rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the search input */
+.search-input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  width: 300px;
+}
+
+/* Style for the search button */
+.search-button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover style for the search button */
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* product style */
+
+
+main {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 3 cards in each row */
+  gap: 20px;
+  /* Adjust the gap between cards */
+
+}
+
+.product {
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  transition: transform 0.5s ease;
+
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.product button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+.product a {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+
+
+}
+
+.product:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+
+}
+
+
+/* footer style */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 18px;
+}
+
+/* slider style */
+
+
+
+
+.slider {
+  width: 92%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  border: #f2f2f2 solid 2px;
+
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  position: absolute;
+  animation: slideAnimation 15s infinite;
+}
+
+
+.slide4 {
+  background-image: url('../photos/44.avif');
+  animation-delay: 8s;
+}
+
+.slide3 {
+  background-image: url('../photos/33.webp');
+  animation-delay: 8s;
+}
+
+
+.slide1 {
+  background-image: url('../photos/11.webp');
+  animation-delay: 0s;
+}
+
+.slide2 {
+  background-image: url('../photos/22.webp');
+  animation-delay: 4s;
+}
+
+
+
+.slide5 {
+  background-image: url('../photos/55.jpg');
+  animation-delay: 8s;
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33.333% {
+    opacity: 1;
+  }
+
+  53.333% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+/* Cart container styles */
+.cart-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 2;
+  max-width: 400px;
+}
+
+/* .cart-content { */
+  /* Add any additional styling you want for the cart content here */
+/* } */
+
+.cart-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Close button style */
+.close-cart {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover style for the close button */
+.close-cart:hover {
+  background-color: #555;
+}
+
+/* cart icon design (Shallaly)*/
+.cart-a{
+  position: relative;
+}
+
+#cartCount {
+  position: absolute;
+  top: -25px;
+  right: -29px;
+  background: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}

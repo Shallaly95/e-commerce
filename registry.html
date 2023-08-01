@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registry </title>
+    <link rel="stylesheet" href="assets/registry.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form id="registration-form" action="login.html">
+            <h1>registration</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username"  required>
+                <small style="display: none; color: red;" id="errorUser">User name shoud be 4 char or more</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required >
+                <small style="display: none; color: red;" id="errorEmail">email shoud be include an "@" and end by '.com'</small>
+
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <small style="display: none; color: red;" id="errorPass">Password shoud be 8 digit or more</small>
+
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" required>
+                <small style="display: none; color: red;" id="errorPass2">Password not match</small>
+            </div>
+            <div>
+            </div>
+            <button type="submit" value="save" onclick="save()">Sign Up</button>
+            <hr>
+                    <p id="Or"> OR</p>
+                    <p id="have">Already have an account? <a  id="Link" href="login.html">Sign in</a> </p>  
+        </form>
+    </div> 
+    <script src="assets/reg.js"></script>
+</body>
+</html>

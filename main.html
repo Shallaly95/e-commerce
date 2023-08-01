@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My eCommerce Website</title>
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Abo Nady & Shalaly</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <!-- <li><a href="registry.html">Login</a></li h> -->
+        <li><a href="#" id="logout">Log Out</a></li>
+        <li>
+          <a href="#" class="cart-a">
+            <i class="fa-solid fa-cart-shopping" data-items="0"></i>
+            <span id="cartCount"></span>
+          </a>
+        </li>
+        <li id="user-info"></li>
+      </ul>
+      <form class="search-form" onsubmit="return handleSearch(event)">
+        <input type="text" class="search-input" placeholder="Search..." list="search-options">
+        <button type="submit" class="search-button">Search</button>
+        <datalist id="search-options">
+          <!-- Data fetched from the API will be populated here -->
+        </datalist>
+      </form>
+    </nav>
+  </header>
+
+  <div class="slider">
+    <div class="slide slide3"></div>
+    <div class="slide slide4"></div>
+    <div class="slide slide5"></div>
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+  </div>
+
+  <main>
+    <!-- Product sections will be dynamically populated here -->
+  </main>
+
+  <div class="cart-container">
+    <div class="cart-content">
+      <!-- Cart items will be dynamically populated here -->
+    </div>
+    <div class="cart-footer">
+      <button class="close-cart">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Abo Nady & Shalaly</h3>
+      <p>&copy; 2023 All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="assets/main.js"></script>
+  <script src="assets/shoppingCard.js"></script>
+</body>
+
+</html>
